@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora - Nivel 3</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+
+<!--El atributo onload se activa cuando se carga un objeto.
+onload se usa con mayor frecuencia dentro del elemento <body> para ejecutar un script una vez que una página web ha cargado completamente todo el contenido-->
+
+
+<body onload="init();">
+
+  <!--Dentro del html creo la estructura que tendrá la calculadora, lo hago mediante una tabla en la cual voy agregando elementos tipo button para los números y operadores, y un elemento tipo span para mostrar el resultado de las operaciones.-->
+
+  <table class="calculadora">
+    <tr>
+      <!--El colspanatributo define el número de columnas que debe abarcar una celda-->
+      <td colspan="4"><span id="resultado"></span></td>
+    </tr>
+    <tr>
+      <td><button id="siete">7</button></td>
+      <td><button id="ocho">8</button></td>
+      <td><button id="nueve">9</button></td>
+      <td><button id="division">/</button></td>
+    </tr>
+    <tr>
+      <td><button id="cuatro">4</button></td>
+      <td><button id="cinco">5</button></td>
+      <td><button id="seis">6</button></td>
+      <td><button id="multiplicacion">*</button></td>
+    </tr>
+    <tr>
+      <td><button id="uno">1</button></td>
+      <td><button id="dos">2</button></td>
+      <td><button id="tres">3</button></td>
+      <td><button id="resta">-</button></td>
+    </tr>
+    <tr>
+      <td><button id="igual">=</button></td>
+      <td><button id="reset">C</button></td>
+      <td><button id="cero">0</button></td>
+      <td><button id="suma">+</button></td>
+    </tr>
+
+  </table>
+
+  <script src="js.js"></script>
+</body>
+
+</html>
